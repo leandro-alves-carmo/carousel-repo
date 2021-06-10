@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+/* <~~ root ~~> */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* <~~ Header ~~> */
+
+.header {
+    padding: 20px;
+}
+
+.logo {
+    width: 220px;
+}
+
+/* <~~ Main ~~> */
+
+.slide-section {
+    padding-top: 14px;    
+}
+
+.title {
+    padding: 0 0 10px 20px;
+}
+.slider .swiper-container {
+    padding: 0 14px;
+}
+
+.slide-img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.slide {
+    font-size: 25px;
+    line-height: 14px;
+    font-weight: 500;
+    margin: 0 20px 20px;
+}
+
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
+    height: 100%;
+    width: calc( 4% - 5px); 
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    border-radius: 4px;
+    background: rgba(247, 248, 255, 0.5);
+}
+
+.slider .swiper-button-prev::after,
+.slider .swiper-button-next::after {
+    font-size: 25px;
+    font-weight: bold;
+    transition: transform 0.1s ease-out;
+} 
+
+.slider .swiper-button-prev {
+    left:0;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.slider .swiper-button-next {
+    right: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+/* <~~ Media ~~> */
+@media screen and (min-width: 640px) {
+    .slider .swiper-button-prev::after,
+    .slider .swiper-button-next::after {
+        display: block;
+        font-size: 12px;
+    }
+
+    .slider .swiper-button-prev:hover::after,
+    .slider .swiper-button-next:hover::after {
+        transform: scale(1.25);
+    }
+ 
+}

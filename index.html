@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Carousel</title>
+    <!------------------------------------------------------------------->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- CSS Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!------------------------------------------------------------------->
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!------------------------------------------------------------------->
+  </head>
+  <body>
+    <!------------------------------------------------------------------->
+    <!-- Header -->
+    <header class="header">
+      <img src="/images/logo.png" class="logo" />
+    </header>
+    <!-- Main -->
+    <main>
+      <section class="slide-section">
+        <h2 class="title">Popular Now</h2>
+        <!-- Slider main container -->
+        <div class="swiper-container slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a class="slide" href="#">
+                <img class="slide-img" src="/images/movie-1.jpg" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide" href="#">
+                <img class="slide-img" src="/images/movie-2.jpg" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="slide" href="#">
+                <img class="slide-img" src="/images/movie-3.jpg" />
+              </a>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </main>
+    <!------------------------------------------------------------------->
+    <!-- Script -->
+    <script src="/index.js"></script>
+  </body>
+</html>
