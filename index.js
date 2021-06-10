@@ -7,6 +7,9 @@ const swiper = new Swiper('.swiper-container', {
     loopAdditionalSlides: 5,
     speed: 500,
 
+    autoplay:{
+        delay: 8000
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
